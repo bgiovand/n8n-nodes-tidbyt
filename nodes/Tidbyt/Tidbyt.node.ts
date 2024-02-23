@@ -1,13 +1,13 @@
 import { debuglog } from 'util';
-import { IExecuteFunctions } from 'n8n-core';
 import {
 	IDataObject,
+	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
 	NodeApiError,
-	NodeOperationError,
+	NodeOperationError
 } from 'n8n-workflow';
 
 import {
