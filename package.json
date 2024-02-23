@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-tidbyt",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "n8n node for interacting with your Tidbyt devices and Pixlet-based applications",
     "license": "MIT",
     "homepage": "https://github.com/drudge/n8n-nodes-tidbyt",
@@ -71,7 +71,9 @@
         "transform": {
             "^.+\\.tsx?$": "ts-jest"
         },
-        "testURL": "http://localhost/",
+        "testEnvironmentOptions": {
+            "url": "http://localhost/"
+        },
         "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
         "testPathIgnorePatterns": [
             "/dist/",
